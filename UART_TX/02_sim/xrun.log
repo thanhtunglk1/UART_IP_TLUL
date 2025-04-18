@@ -1,0 +1,81 @@
+xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s001: Started on Apr 17, 2025 at 02:51:14 EDT
+xrun
+	+xm64bit
+	-sv
+	-f ../02_sim/flist.f
+		../00_src/uart_tx.sv
+		../00_src/baud_gen.sv
+		../01_tb/TX_ver_1_tb.sv
+	-timescale 1ns/1ns
+	+ntb_random_seed=automatic
+	+access+rcw
+
+   User defined plus("+") options:
+	+ntb_random_seed=automatic
+
+Recompiling... reason: file '../01_tb/TX_ver_1_tb.sv' is newer than expected.
+	expected: Thu Apr 17 02:49:55 2025
+	actual:   Thu Apr 17 02:50:57 2025
+file: ../01_tb/TX_ver_1_tb.sv
+	module worklib.tb_uart_tx:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		tb_uart_tx
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.tb_uart_tx:sv <0x003931a7>
+			streams:  16, words: 21790
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 3       3
+		Registers:              32      32
+		Scalar wires:           18       -
+		Vectored wires:          6       -
+		Always blocks:           8       8
+		Initial blocks:          3       3
+		Cont. assignments:       6       6
+		Pseudo assignments:     13      13
+		Simulation timescale:  1ns
+	Writing initial simulation snapshot: worklib.tb_uart_tx:sv
+Loading snapshot worklib.tb_uart_tx:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /opt/cadence/XCELIUM2009/tools/xcelium/files/xmsimrc
+xcelium> run
+Resetting DUT...
+Reset complete. Starting test cases...
+Reset successful: IDLE out 1
+TEST 1: TRANSMIT 8'h55 (01010101) with 1 stop bit and no parity
+IDLE out 0 transmission failed: expected 1, got 0
+Start bit transmitted successfully: 0
+Data bit 0 transmission failed: expected 0, got 1
+Data bit 1 transmitted successfully: 0
+Data bit 2 transmitted successfully: 1
+Data bit 3 transmitted successfully: 0
+Data bit 4 transmitted successfully: 1
+Data bit 5 transmitted successfully: 0
+Data bit 6 transmission failed: expected 1, got 0
+Data bit 7 transmission failed: expected 0, got 1
+Stop bit transmitted successfully: 1
+TEST 2: TRANSMIT 8'hAA (10101010) with 1 stop bit and no parity
+IDLE out 0 transmitted successfully: 1
+Start bit transmission failed: expected 0, got 1
+Data bit 0 transmission failed: expected 0, got 1
+Data bit 1 transmitted successfully: 1
+Data bit 2 transmission failed: expected 0, got 1
+Data bit 3 transmitted successfully: 1
+Data bit 4 transmission failed: expected 0, got 1
+Data bit 5 transmitted successfully: 1
+Data bit 6 transmission failed: expected 0, got 1
+Data bit 7 transmitted successfully: 1
+Stop bit transmitted successfully: 1
+IDLE out 1 transmitted successfully: 1
+Simulation complete via $finish(1) at time 1190970 NS + 0
+../01_tb/TX_ver_1_tb.sv:170         $finish;
+xcelium> exit
+TOOL:	xrun(64)	20.09-s001: Exiting on Apr 17, 2025 at 02:51:15 EDT  (total: 00:00:01)

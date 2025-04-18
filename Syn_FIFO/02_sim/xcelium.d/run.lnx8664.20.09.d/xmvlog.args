@@ -1,0 +1,20 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/run.lnx8664.20.09.d
+-RUNMODE
+-sv
+../00_src/syn_fifo.sv
+../00_src/duo_port_RAM_single_clk.sv
+../01_tb/syn_fifo_tb.sv
+-CDSLIB
+./xcelium.d/run.lnx8664.20.09.d/cdsrun.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.20.09.d/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/run.lnx8664.20.09.d/xllibs
+-ALLOWUNBOUND

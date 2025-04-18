@@ -1,0 +1,24 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/run.lnx8664.20.09.d
+-RUNMODE
+-sv
+../00_src/baud_gen.sv
+../00_src/data_collect.sv
+../00_src/negedge_detect.sv
+../00_src/overrun_check.sv
+../00_src/parity_check.sv
+../00_src/uart_rx.sv
+../01_tb/uart_rx_tb.sv
+-CDSLIB
+./xcelium.d/run.lnx8664.20.09.d/cdsrun.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.20.09.d/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/run.lnx8664.20.09.d/xllibs
+-ALLOWUNBOUND

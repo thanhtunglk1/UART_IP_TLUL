@@ -1,0 +1,53 @@
+xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s001: Started on Apr 13, 2025 at 09:03:28 EDT
+xrun
+	-gui
+	+xm64bit
+	-sv
+	-f ../02_sim/flist.f
+		../00_src/baud_gen.sv
+		../00_src/data_collect.sv
+		../00_src/negedge_detect.sv
+		../00_src/overrun_check.sv
+		../00_src/parity_check.sv
+		../00_src/uart_rx.sv
+		../01_tb/uart_rx_tb.sv
+	-timescale 1ns/1ns
+	+ntb_random_seed=automatic
+	+access+rcw
+
+   User defined plus("+") options:
+	+ntb_random_seed=automatic
+
+Recompiling... reason: file '../00_src/parity_check.sv' is newer than expected.
+	expected: Sat Apr 12 10:41:31 2025
+	actual:   Sun Apr 13 07:55:58 2025
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		uart_rx_tb
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 7       7
+		Registers:              60      60
+		Scalar wires:           46       -
+		Vectored wires:         12       -
+		Always blocks:          16      16
+		Initial blocks:          8       8
+		Cont. assignments:      16      16
+		Pseudo assignments:     26      26
+		Simulation timescale:  1ns
+	Writing initial simulation snapshot: worklib.uart_rx_tb:sv
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /opt/cadence/XCELIUM2009/tools/xcelium/files/xmsimrc
+xcelium> ^C
+xcelium> exit
+TOOL:	xrun(64)	20.09-s001: Exiting on Apr 13, 2025 at 09:03:52 EDT  (total: 00:00:24)

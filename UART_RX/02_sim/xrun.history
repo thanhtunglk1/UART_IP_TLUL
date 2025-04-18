@@ -1,0 +1,11 @@
+s1(12Apr2025:14:42:54):  xrun +xm64bit -sv -f ../02_sim/flist.f -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw 
+s2(12Apr2025:14:43:39):  xrun +xm64bit -sv -f ../02_sim/flist.f -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw 
+s3(12Apr2025:14:44:12):  xrun +xm64bit -sv -f ../02_sim/flist.f -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw 
+s4(12Apr2025:14:45:02):  xrun +xm64bit -sv -f ../02_sim/flist.f -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw 
+s5(12Apr2025:14:45:22):  xrun +xm64bit -sv -f ../02_sim/flist.f -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw 
+s6(12Apr2025:15:03:33):  xrun +xm64bit -sv -f ../02_sim/flist.f -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw 
+s7(12Apr2025:23:42:58):  xrun +xm64bit -sv -f ../02_sim/flist.f -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw 
+s8(13Apr2025:00:11:25):  xrun +xm64bit -sv -f ../02_sim/flist.f -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw 
+s9(13Apr2025:01:45:36):  xrun +xm64bit -sv -f ../02_sim/flist.f -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw 
+s10(13Apr2025:07:26:11):  xrun +xm64bit -sv -f ../02_sim/flist.f -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw 
+s11(13Apr2025:09:03:28):  xrun -gui +xm64bit -sv -f ../02_sim/flist.f -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw 
